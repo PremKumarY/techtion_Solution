@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us</title>
+    <link rel="stylesheet" href="apply1.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Join Our Community</h2>
+        <form action="/submit" method="POST">
+            <!-- Full Name -->
+            <div class="input-group">
+                <input type="text" id="name" name="name" placeholder="Full Name" required>
+            </div>
+
+            <!-- Email -->
+            <div class="input-group">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="input-group">
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+            </div>
+
+            <!-- Gender -->
+            <div class="input-group">
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- Message -->
+            <div class="input-group">
+                <textarea id="message" name="message" rows="4" placeholder="Leave a message"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Apply Now</button>
+        </form>
+    </div>
+</body>
+</html>

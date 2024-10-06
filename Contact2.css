@@ -1,0 +1,150 @@
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* .maindiv{
+    display: flex;
+    justify-content: center;
+    background-color: hsl(0, 0%, 97%)
+} */
+.main{
+    height: 100%;
+    width: 85%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.ContComm{
+    padding:10px ;
+    margin-top: 30px;
+    
+    /* border: solid 2px  black; */
+    height: 90vh;
+   
+    font-size: large;
+}
+.message{
+    margin-top: 80px;
+}
+.message p{
+    letter-spacing: 1px;
+    text-align: center;
+    /* padding-bottom: 7px; */
+    position: relative;
+    color: #414141;
+    line-height: 32px;
+    font-size: 33px;
+    text-transform: none;
+}
+.contactus p{
+    text-align: center;
+    font-size: 28px;
+    /* margin-top: -25px; */
+    margin-bottom: 46px;
+    font-family: Tangerine, cursive;
+    color: #f20000;
+    font-weight: 400;
+    letter-spacing: 3px;
+    position: relative;
+    text-transform: capitalize;
+}
+.message, .contactus{
+    display: flex;
+    justify-content: center;
+}
+.container1{
+    width:100%;
+    height: 100%;
+}
+.contactform{
+    width: 100%;
+}
+.contactform .row{
+    margin-left:6% ;
+    height: auto;
+    width: 100%;
+    /* border: solid black 1px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contactform .textar{
+    display: flex;
+    justify-content: center;
+}
+
+.contactform form textarea{
+    margin-top: 18px;
+    padding: 5px;
+    height: 30vh;
+    width: 83.5%;
+    border: none;
+    border-bottom: black solid 1px;
+
+}
+
+.contactform input{
+    margin: 2%;
+    padding: 5px;
+    border: none;
+    line-height: 10px;
+    height: 26px;
+    align-items: center;
+    border-bottom: #000000 solid 1px;
+}
+
+.contactform input, .contactform textarea{
+    background-color:  rgb(255, 255, 255);
+}
+.msgbtn{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 7%;
+    margin-top: 2%;
+}
+
+.msgbtn button{
+    
+    padding: 0 30px;
+    height: 53px;
+    font-size: medium;
+    line-height: 53px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    overflow: hidden;
+    outline: 0;
+    border: none;
+    color: #fff;
+    position: relative;
+    margin: 11px 0 0;
+    background: #f20000;
+    border-radius: 50px;
+}
+
+.container2{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    align-items: center;
+    letter-spacing: 1px;
+    background-color: #d20808ed;
+    font-size: medium;
+    margin-top: 220px;
+    margin-left: 30px;
+    
+}
+
+@media screen and (max-width: 475) {
+    .container2{
+       flex-direction: column;
+    }
+  }
+
+  
+ 

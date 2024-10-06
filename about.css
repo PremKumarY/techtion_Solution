@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    padding: 3vw;
+    align-items: center;
+    background-color: rgb(224, 237, 237);
+}
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.containt{
+    /* background-color: aqua; */
+    height: calc(100% - 100px);
+    width: 100%;
+    display: flex;
+    position: relative;
+ }
+ .left{
+    height: 100%;
+    width: 55%;
+    /* background-color: #d95959;  */
+    padding: 5vw 4vw;
+
+ }
+ .left h1{
+    font-size: 5vw;
+    font-weight: 600;
+    width: 80%;
+ }
+
+ .left p{
+    font-size: 1vw;
+    font-weight: 400;
+    font-style: normal;
+    width: 80%;
+    color: black;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+    margin-bottom: 30px;
+ }
+ .left h1 span{
+    color: #fb0a0ad6;
+ }
+.containt a{
+    /* font-size: 1vw;
+    padding: 1vw 3vw; */
+    font-size: 20px;
+        padding: 10px 15px;
+    background-color:#f51212;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+   
+
+}
+.containt a:hover{
+    box-shadow: 0 1px 0 #ccccccb8, 0 2px 0 #cccccc93,
+    0 15px 25px rgba(0, 0, 0, 0.7);
+}
+
+
+
+ .right{
+    height: 100%;
+    width: 45%;
+    /* background-color: black;   */
+
+ }
+ .right img{
+    height: calc(100% - 100px);
+    width: 100%;
+    margin-top: 20px;
+ }
+
+@media (max-width:600px) {
+    .containt{
+        flex-direction: column;
+        height: calc(100% - 60px);
+    }
+    .left{
+        width: 100%;
+        height: 50%;
+    }
+    .left h1{
+        font-size: 10vw;
+        line-height: 11vw;
+    }
+    .left p{
+        font-size: 3vw;
+        width: 90%;
+        margin-top: 5vw;
+        margin-bottom: 6cw;
+    }
+    .containt button{
+        padding: 3vw 6vw;
+        font-size: 3vw;
+        border-radius: 3px;
+    }
+    .right{
+        margin-top: 80px;
+        width: 100%;
+        /* height: 50%; */
+    }
+    
+}
+@media (max-width:300px) {
+    .left p{
+        font-size: 1vw;
+        width: 90%;
+        margin-top: 5vw;
+        margin-bottom: 6cw;
+    }
+    .right{
+        margin-top: 180px;
+        width: 100%;
+    }
+    .containt a{
+        font-size: 20px;
+        padding: 10px 15px;
+        background-color:#f51212;
+        color: #fff;
+        font-weight: 700;
+        border: none;
+        border-radius: 10px;
+        text-decoration: none;
+        border: none;
+       
+    
+    }
+}

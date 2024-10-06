@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:content-box;
+
+
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+    padding: 2% 3%;
+}
+
+.card {
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    padding: 1px;
+    text-align: center;
+    width: 20%;
+    overflow: hidden;
+    margin-left: 20px;
+    position: relative;
+}
+
+.card img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 22vh; 
+    object-fit: fill;
+    opacity: 0.9;
+    
+    
+}
+#heading{
+    text-align: center;
+    padding: 10px;
+    color: #0b0b0b;
+}
+button{
+    margin-left: 88%;
+    padding: 3px;
+    width: 6%;
+    border-radius: 15px;
+    color: black;
+    background-color: white;
+}
+#main{
+    background-color:white;
+}
+
+
+@media screen and (max-width: 500px) {
+    .card , .button , #heading {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
+  
