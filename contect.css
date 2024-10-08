@@ -1,0 +1,218 @@
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.maindiv{
+    display: flex;
+    justify-content: center;
+    background-color: hsl(0, 0%, 97%);
+    width: 100%;
+   
+    
+}
+.main{
+    height: 100vh;
+    width: 85%;
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.ContComm{
+    padding:8px ;
+    margin-top: 30px;
+    
+    /* border: solid 2px  black; */
+    height: 90vh;
+   
+    font-size: large;
+}
+.message{
+    margin-top:10px;
+}
+.message p{
+    letter-spacing: 1px;
+    text-align:center;
+    margin-right: 50px;
+    /* padding-bottom: 7px; */
+    position: relative;
+    color: #414141;
+    line-height: 32px;
+    font-size: 33px;
+    text-transform: none;
+}
+.contactus p{
+    text-align: center;
+    font-size: 28px;
+    margin-top: -25px;
+    margin-bottom: 46px;
+    margin-right: 70px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #f20000;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-align: center;
+    position: relative;
+    text-transform: capitalize;
+}
+.message, .contactus{
+    display: flex;
+    justify-content: center;
+}
+.container1{
+    width: 40vw;
+    padding-left: 0%;
+    
+    
+}
+.contactform{
+    width: 100%;
+}
+.contactform .row{
+    margin-left:0% ;
+    height: auto;
+    width: 100%;
+    /* border: solid black 1px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-items:start;
+}
+.contactform .textar{
+    display: flex;
+    justify-content: center;
+}
+
+.contactform form textarea{
+    margin-top: 18px;
+    padding: 5px;
+    height:20vh;
+    
+    width: 83.5%;
+    border: none;
+    border-bottom: black solid 1px;
+
+}
+
+.contactform input{
+    margin: 1%;
+    padding: 5px;
+    border: none;
+    line-height: 10px;
+    height: 26px;
+    width:1000px;
+    align-items:center;
+    border-bottom: #000000 solid 1px;
+}
+
+.contactform input, .contactform textarea{
+    background-color:  rgb(255, 255, 255);
+    margin-right: 65px;
+    
+}
+.msgbtn{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 7%;
+    margin-top: 2%;
+}
+
+.msgbtn button{
+    
+    padding: 0 30px;
+    height: 53px;
+    font-size: medium;
+    line-height: 53px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    overflow: hidden;
+    outline: 0;
+    border: none;
+    color: #fff;
+    position: relative;
+    margin: 11px 0 0;
+    background: #f20000;
+    border-radius: 50px;
+}
+
+.container2{
+    width: 20vw;
+    height: 380px;
+    color: #fff;
+    align-items: center;
+    letter-spacing: 1px;
+    background-color: #d20808ed;
+    font-size: medium;
+    margin-top: 150px;
+    margin-left: 10px;
+    
+    
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .contactform,.container2,.contactus,.ContComm,.main {
+      width: 100%; 
+      height: fit-content;
+      flex-wrap: wrap;
+      margin-right: 15px;
+      margin: 15px;
+
+      
+      }
+      
+    
+       
+  }
+
+  @media screen and (max-width: 400px) {
+    .contactform,.contactus,.ContComm,.main {
+      width: 100%; 
+      flex-wrap: wrap;
+      margin-right: 15px;
+      margin: 15px;
+
+    }
+    .container1{
+        margin-top: 20px;
+        width: 100%;
+          
+        
+    }
+    .container2{
+        margin-top: 20px;
+        width: 85%;
+       
+        
+    }
+  }
+  @media screen and (max-width: 300px) {
+    .contactform,.contactus,.ContComm,.main {
+      width: 100%; 
+      flex-wrap: wrap;
+      margin-right: 16px;
+      margin: 15px;
+
+    }
+    .container1{
+        margin-top: 20px;
+        width: 100%;
+          
+        
+    }
+    .container2{
+        margin-top: 20px;
+        width: 85%;
+       
+        
+    }
+  }
+  
+ 

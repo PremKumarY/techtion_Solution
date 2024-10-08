@@ -4,18 +4,34 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.naves{
+  display: flex;
+  justify-content: space-between;
+  font-size: 50px;
+  text-decoration: none;
+  color: #3200bac9;
+  font-weight: 800;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+.naves h1{
+  font-weight: 700;
+  height: 100%;
+  width: 100%;
+}
 
 .navbar1 {
   /* position: sticky;
   top: 0;
   overflow: hidden; */
-  padding: 2px 20px;
+  padding: 2px 15px;
   display: flex;
   /* justify-content: space-between; */
   align-items: center;
   color: rgb(8, 8, 8);
-  margin-bottom: 5px;
+  margin-bottom: 2px;
   background: white;
   /* font-family: cursive; */
   /* background: linear-gradient(to right, rgba(255, 0, 0, 0.621), rgba(255, 255, 0, 0.599), rgba(0, 0, 255, 0.449)); */
@@ -28,16 +44,17 @@
 
 .icons {
   display: flex;
-  margin-left: 200px;
-  padding-left: 4px;
+  /* margin-left: 200px; */
+  float: inline-end;
+  /* padding-left: 400px; */
 }
 
 
 .icons img {
   height: 40px;
   margin-left: 100px;
-  margin: 8px;
-
+  /* margin: 8px; */
+justify-content: center;
 }
 
 .icons p {
@@ -53,22 +70,46 @@
   }
 }
 
-@media (max-width:547px) {
+@media (max-width:650px) {
   .icons img {
     display: none;
+   
+  }
+  .navbar1 img {
+    height: 50px;
+    align-items: center;
   }
 
   .logo {
-    flex-direction: column;
+    /* flex-direction: column; */
+    font-size: 2vh;
+    font-weight: 100;
+    width: 100%;
   }
 }
 
-@media (max-width:350px) {
-  .logo {
-    display: none;
+@media (max-width:500px) {
+  .logo a{
+    /* display: none; */
+    font-size: 20px;
 
   }
+  /* .icons { */
+    /* display: none; */
+    /* display: flex;
+    margin-left: 0px;
+    float: inline-end;
+    padding-left: 4px; */
+  /* } */
+  .naves h1{
+    font-weight: 700;
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+  }
+  
 }
+
 
 
 /* toggel */
@@ -95,11 +136,17 @@
   font-weight: bold;
   font-style: normal;
   font-weight: 700;
-
+  height: auto;
+  flex-wrap: nowrap;
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
     0 15px 25px rgba(0, 0, 0, 0.7);
 
 
+}
+
+
+.logo a:hover {
+  text-decoration: none;
 }
 
 /* Links inside navbar */
@@ -164,6 +211,7 @@
   font-weight: 600;
   padding: 8px;
   border-radius: 5px;
+  text-decoration: none;
 }
 
 .login a {
@@ -197,32 +245,34 @@
     display: none;
   }
 }
+/* caouselsecond */
 
+/* caouselsecond */
 
-.carousel-caption {
-  /* background: rgba(204, 239, 207, 0.759); */
+/* .carousel-caption {
+  background: rgba(204, 239, 207, 0.759);
   border-radius: 12px;
   width: 30%;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+} */
 
 /* .d-block {
   filter: blur(8px);
   -webkit-filter: blur(10px);
 } */
 
-.carousel-caption h5 {
+/* .carousel-caption h5 {
   color: white;
 
   font-weight: 800;
   font-size: 30px;
   text-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+} */
 
-.carousel-caption p{
+/* .carousel-caption p{
   color: white;
 }
-/* new */
+new */
 #second {
   justify-content: space-between;
   display: flex;
@@ -454,7 +504,9 @@ h6 {
   cursor: pointer;
   border-radius: 30px;
   justify-content: center;
+  
 }
+
 
 .button1 {
   background-color: white;
@@ -487,6 +539,10 @@ h6 {
 .button3:hover {
   background-color: #f44336;
   color: white;
+}
+.button3 a:hover{
+  text-decoration: none;
+
 }
 
 /* <p>TECHTION SOLUTION PRIVATE LIMITED</p> */
